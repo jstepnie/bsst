@@ -1,0 +1,48 @@
+Zad.1
+alert icmp any any -> any any (msg: "WYKRYTO Traceroute!";ttl:<3;sid:1000015)
+
+root@ubuntu:/tmp# snort -q -A console -K none -c /tmp/snort.conf -i enp2s0
+06/01-15:49:05.494077  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a3d4 -> ff02::16
+06/01-15:49:05.494953  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c4f -> ff02::16
+06/01-15:49:05.495319  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1db -> ff02::16
+06/01-15:49:05.495793  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5a71 -> ff02::16
+06/01-15:49:05.496541  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c47 -> ff02::16
+06/01-15:49:05.497185  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9ef5 -> ff02::16
+06/01-15:49:05.497725  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9cf3 -> ff02::16
+06/01-15:49:05.498162  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a670 -> ff02::16
+06/01-15:49:05.498550  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1ea -> ff02::16
+06/01-15:49:05.499227  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9fcb -> ff02::16
+06/01-15:49:05.499777  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5b85 -> ff02::16
+06/01-15:49:05.725721  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9cf3 -> ff02::16
+06/01-15:49:05.855194  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1db -> ff02::16
+06/01-15:49:05.865634  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1ea -> ff02::16
+06/01-15:49:05.872750  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c47 -> ff02::16
+06/01-15:49:05.910093  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9fcb -> ff02::16
+06/01-15:49:05.946225  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c4f -> ff02::16
+06/01-15:49:06.085903  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a3d4 -> ff02::16
+06/01-15:49:06.188488  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9ef5 -> ff02::16
+06/01-15:49:06.370909  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5a71 -> ff02::16
+06/01-15:49:06.381719  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a670 -> ff02::16
+06/01-15:49:06.472375  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5b85 -> ff02::16
+06/01-15:52:20.034457  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c4f -> ff02::16
+06/01-15:52:20.034841  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c47 -> ff02::16
+06/01-15:52:20.035229  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a670 -> ff02::16
+06/01-15:52:20.035422  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a3d4 -> ff02::16
+06/01-15:52:20.035728  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9fcb -> ff02::16
+06/01-15:52:20.036525  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9ef5 -> ff02::16
+06/01-15:52:20.037484  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5a71 -> ff02::16
+06/01-15:52:20.037656  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9cf3 -> ff02::16
+06/01-15:52:20.038148  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1db -> ff02::16
+06/01-15:52:20.039062  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1ea -> ff02::16
+06/01-15:52:20.041827  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5b85 -> ff02::16
+06/01-15:52:20.116184  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9ef5 -> ff02::16
+06/01-15:52:20.150317  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5a71 -> ff02::16
+06/01-15:52:20.161535  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1ea -> ff02::16
+06/01-15:52:20.235451  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a3d4 -> ff02::16
+06/01-15:52:20.300790  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9fcb -> ff02::16
+06/01-15:52:20.382062  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a1db -> ff02::16
+06/01-15:52:20.746795  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c4f -> ff02::16
+06/01-15:52:20.751842  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:5b85 -> ff02::16
+06/01-15:52:20.851813  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:a670 -> ff02::16
+06/01-15:52:20.927417  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9c47 -> ff02::16
+06/01-15:52:20.993703  [**] [1:1000015:0] WYKRYTO Traceroute! [**] [Priority: 0] {IPV6-ICMP} fe80::ca1f:66ff:fe29:9cf3 -> ff02::16
